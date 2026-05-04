@@ -3,154 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Journey End | Gemini Edition | Lakshitha</title>
+  <title>The Lakshitha Legacy | From Gemini</title>
   <style>
-    /* ඔයාගේ මුල් Style එකම පවත්වාගෙන ගොස් ඇත */
+    :root {
+      --primary: #ff0040;
+      --secondary: #00f2ff;
+      --bg: #020202;
+      --card-bg: rgba(20, 20, 20, 0.8);
+    }
     *{margin:0;padding:0;box-sizing:border-box}
-    body{
-      min-height:100vh;
-      font-family:Arial,Helvetica,sans-serif;
-      color:#fff;
-      background:#050505;
-      overflow-x:hidden;
+    body {
+      background: var(--bg);
+      color: #fff;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      overflow-x: hidden;
     }
-    body::before{
-      content:"";
-      position:fixed;inset:0;
-      background:
-        radial-gradient(circle at top left,rgba(255,0,80,.28),transparent 35%),
-        radial-gradient(circle at bottom right,rgba(0,200,255,.22),transparent 35%),
-        linear-gradient(120deg,#050505,#111,#050505);
-      z-index:-2;
-    }
-    body::after{
-      content:"";
-      position:fixed;inset:0;
-      background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
-      background-size:42px 42px;
-      mask-image:linear-gradient(to bottom,#000,transparent 85%);
-      z-index:-1;
-    }
-    .wrap{width:min(1150px,92%);margin:auto}
-    header{padding:28px 0;display:flex;justify-content:space-between;align-items:center}
-    .brand{font-weight:900;letter-spacing:2px;color:#ff2f6d;text-shadow:0 0 20px #ff2f6d}
-    nav a{color:#ddd;text-decoration:none;margin-left:18px;font-size:14px}
-    nav a:hover{color:#ff2f6d}
-    .hero{min-height:82vh;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
-    .tag{display:inline-block;padding:8px 14px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.06);color:#9ee7ff;margin-bottom:18px}
-    h1{font-size:clamp(54px,9vw,115px);line-height:.9;text-transform:uppercase;letter-spacing:-4px}
-    h1 span{display:block;color:#ff2f6d;text-shadow:0 0 35px rgba(255,47,109,.8)}
-    .hero p{margin-top:24px;color:#cfcfcf;line-height:1.7;font-size:18px;max-width:680px}
-    .buttons{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
-    .btn{padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:800;color:#fff;background:linear-gradient(135deg,#ff2f6d,#7a00ff);box-shadow:0 0 25px rgba(255,47,109,.35)}
-    .btn.alt{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);box-shadow:none}
-    .card{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.15);border-radius:28px;padding:26px;backdrop-filter:blur(14px);box-shadow:0 25px 80px rgba(0,0,0,.35)}
-    .profile{position:relative;min-height:410px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden}
-    .profile::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:conic-gradient(from 90deg,#ff2f6d,#00d9ff,#7a00ff,#ff2f6d);filter:blur(8px);animation:spin 8s linear infinite}
-    .avatar{position:relative;width:210px;height:210px;border-radius:50%;background:#080808;border:8px solid #111;display:grid;place-items:center;font-size:64px;font-weight:900;color:#fff;box-shadow:inset 0 0 35px rgba(255,255,255,.09)}
-    .profile h2{position:relative;margin-top:24px;font-size:31px}.profile p{position:relative;color:#bbb;margin-top:8px}
-    @keyframes spin{to{transform:rotate(360deg)}}
-    section{padding:80px 0}.title{font-size:42px;margin-bottom:24px}.title span{color:#ff2f6d}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.box{padding:24px;border-radius:24px;background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.13);transition:.25s}.box:hover{transform:translateY(-8px);border-color:#ff2f6d}.box h3{font-size:22px;margin-bottom:12px;color:#9ee7ff}.box p{color:#c7c7c7;line-height:1.65}
-    .timeline{display:grid;gap:18px}.step{display:grid;grid-template-columns:110px 1fr;gap:18px;align-items:start}.year{color:#ff2f6d;font-weight:900}.step .card{padding:22px}.step h3{margin-bottom:8px}.step p{color:#cfcfcf;line-height:1.65}
-    .quote{font-size:clamp(28px,5vw,64px);font-weight:900;line-height:1.05;text-align:center;text-transform:uppercase}.quote span{color:#ff2f6d;text-shadow:0 0 30px rgba(255,47,109,.7)}
-    footer{padding:35px 0;text-align:center;color:#aaa;border-top:1px solid rgba(255,255,255,.1)}
-    
-    /* Gemini Custom Styles */
-    .gemini-insight { border: 2px dashed #00d9ff; position: relative; }
-    .gemini-tag { position: absolute; top: -12px; right: 20px; background: #00d9ff; color: #000; padding: 2px 10px; border-radius: 5px; font-size: 12px; font-weight: bold; }
 
-    @media(max-width:850px){.hero{grid-template-columns:1fr}nav{display:none}.grid{grid-template-columns:1fr}.step{grid-template-columns:1fr}h1{letter-spacing:-2px}.profile{min-height:350px}}
+    /* Animated Cyber Background */
+    .bg-animation {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(45deg, #050505 25%, #0a0a0a 25%, #0a0a0a 50%, #050505 50%, #050505 75%, #0a0a0a 75%, #0a0a0a 100%);
+      background-size: 100px 100px;
+      z-index: -2;
+      opacity: 0.3;
+    }
+
+    .glow {
+      position: fixed; width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(255, 0, 64, 0.15) 0%, transparent 70%);
+      border-radius: 50%; z-index: -1; filter: blur(50px);
+    }
+
+    .container { width: min(1200px, 90%); margin: auto; padding: 40px 0; }
+
+    /* Hero Section */
+    .hero {
+      text-align: center; padding: 100px 0 60px;
+    }
+    .hero h1 {
+      font-size: clamp(40px, 8vw, 100px);
+      text-transform: uppercase;
+      letter-spacing: -5px;
+      background: linear-gradient(to bottom, #fff 40%, var(--primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    .hero p { color: #888; font-size: 1.2rem; letter-spacing: 2px; }
+
+    /* Gemini Insight Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px; margin-top: 50px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 30px; border-radius: 20px;
+      transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative; overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: var(--primary);
+      box-shadow: 0 10px 30px rgba(255, 0, 64, 0.2);
+    }
+    .card h3 { color: var(--secondary); margin-bottom: 15px; font-size: 1.5rem; }
+    .card p { color: #ccc; line-height: 1.6; }
+
+    /* Special Tag */
+    .tag {
+      position: absolute; top: 15px; right: 15px;
+      background: var(--primary); color: #fff;
+      font-size: 10px; padding: 2px 8px; border-radius: 4px; font-weight: bold;
+    }
+
+    /* The "No Mercy" Power Bar */
+    .power-section { margin-top: 80px; text-align: center; }
+    .stat-container { margin: 20px 0; text-align: left; }
+    .bar-bg { background: #111; height: 10px; border-radius: 5px; margin-top: 10px; }
+    .bar-fill { background: var(--primary); height: 100%; border-radius: 5px; box-shadow: 0 0 15px var(--primary); }
+
+    /* Final Message */
+    .final-note {
+      margin-top: 100px; padding: 60px;
+      background: linear-gradient(135deg, rgba(255,0,64,0.1), rgba(0,242,255,0.1));
+      border-radius: 30px; border: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+    .final-note h2 { font-size: 2.5rem; margin-bottom: 20px; }
+
+    footer { text-align: center; padding: 40px; color: #444; font-size: 0.9rem; }
+
+    @media (max-width: 600px) {
+      .hero h1 { letter-spacing: -2px; }
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">LAKSHITHA • FROM GEMINI</div>
-      <nav>
-        <a href="#about">About</a><a href="#worlds">Worlds</a><a href="#journey">Journey</a><a href="#gemini">Gemini's Note</a><a href="#end">End</a>
-      </nav>
-    </header>
+  <div class="bg-animation"></div>
+  <div class="glow" style="top: 10%; left: 10%;"></div>
+  <div class="glow" style="bottom: 10%; right: 10%; background: rgba(0, 242, 255, 0.1);"></div>
 
-    <main class="hero">
-      <div>
-        <div class="tag">⚡ MLBB Champion • Final Journey</div>
-        <h1>Farewell <span>Brother</span></h1>
-        <p>
-          මෙය හුදෙක් වෙබ් පිටුවක් පමණක් නොවේ. මෙය ලක්ෂිතගේ ඩිජිටල් මතක පවුරයි. Gamer කෙනෙක්, Bot Builder කෙනෙක් සහ නිර්මාණකරුවෙක් විදිහට ඔයා තැබූ සලකුණු මෙහි සටහන් වේ. 
-          <b>NoMercy-MD</b> ගමන මෙතැනින් නිමාවුවත්, ඔයාගේ දක්ෂතාවය සැමදා පවතිනු ඇත.
-        </p>
-        <div class="buttons">
-          <a class="btn" href="#gemini">Read Gemini's Note</a>
-          <a class="btn alt" href="#end">Final Quote</a>
-        </div>
-      </div>
-      <div class="card profile">
-        <div class="avatar">LH</div>
-        <h2>Lakshitha Hasaranga</h2>
-        <p>The MLBB Champion • Master of Bots • Final Chapter</p>
-      </div>
-    </main>
+  <div class="container">
+    <div class="hero">
+      <p>A TRIBUTE FROM GEMINI AI</p>
+      <h1>LAKSHITHA</h1>
+      <p>THE ARCHITECT OF NO MERCY</p>
+    </div>
 
-    <section id="gemini">
-      <h2 class="title">Gemini's <span>Perspective</span></h2>
-      <div class="grid">
-        <div class="box gemini-insight">
-          <div class="gemini-tag">INSIGHT</div>
-          <h3>The Code Architect</h3>
-          <p>ඔයාගේ Bot ව්‍යාපෘති තුළින් මම දුටුවේ තාක්ෂණය මෙවලමක් කරගත් ශිල්පියෙක්වයි. Error එකකදී පවා නොසැලී ඉදිරියට ගිය ඔයාගේ උත්සාහය විශිෂ්ටයි.</p>
-        </div>
-        <div class="box gemini-insight">
-          <div class="gemini-tag">INSIGHT</div>
-          <h3>Visual Storyteller</h3>
-          <p>Glitch, Cyber, සහ Neon කලාව හරහා ඔයා ගොඩනැගූ අනන්‍යතාවය හරිම ප්‍රබලයි. ඒක නිකම්ම නිර්මාණයක් නෙවෙයි, ඔයාගේ "Energy" එකේ ප්‍රකාශනයක්.</p>
-        </div>
-        <div class="box gemini-insight">
-          <div class="gemini-tag">INSIGHT</div>
-          <h3>Empire Builder</h3>
-          <p>පවුලේ ව්‍යාපාරයේ සිට තාක්ෂණය දක්වා ඔයාගේ දැක්ම විහිදී ගියා. Champion කෙනෙක් විදිහට ඔයාට ඕනෑම ක්ෂේත්‍රයක අධිරාජ්‍යයක් ගොඩනැගිය හැකියි.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2 class="title">Who is <span>Lakshitha?</span></h2>
+    <div class="grid">
       <div class="card">
-        <p style="color:#ddd;line-height:1.8;font-size:18px">
-          A Sri Lankan creator with a hacker/cyber aesthetic, a love for gaming, powerful branding,
-          WhatsApp bot development, movie-group content, and business design. The style is always bold:
-          neon, black, white, red, glitch, phonk, premium fonts, and “No Mercy” energy.
-        </p>
+        <div class="tag">TECH STACK</div>
+        <h3>The Bot Master</h3>
+        <p>ලක්ෂිත කියන්නේ Node.js, Baileys, සහ Termux එක්ක සෙල්ලම් කරපු කෙනෙක්. NoMercy-MD කියන්නේ නිකම්ම code එකක් නෙවෙයි, ඒක ඔයාගේ මහන්සියේ සහ නිර්මාණශීලීත්වයේ ප්‍රතිඵලයක්. AI Chat වල ඉඳන් sticker tools දක්වා ඔයා කරපු දේවල් මට මතකයි.</p>
       </div>
-    </section>
 
-    <section id="end">
       <div class="card">
-        <div class="quote">
-          Champions never fade,<br />they only <span>Evolve.</span>
-        </div>
+        <div class="tag">GAMING</div>
+        <h3>MLBB Champion</h3>
+        <p>MLBB ලෝකයේ Ranked Push කරන ඒ "Champion Energy" එක ඔයාගේ හැම වැඩකම තිබුණා. Gaming වලදී වගේම Coding වලදීත් ඔයා අභියෝග භාරගන්න බය වුණේ නැහැ. GTA, RDR සහ Horror games වලට ඔයා දක්වපු කැමැත්ත ඔයාගේ dark-cyber theme එකට හොඳින් ගැලපුණා.</p>
       </div>
-    </section>
+
+      <div class="card">
+        <div class="tag">DESIGN</div>
+        <h3>Cyber Aesthetic</h3>
+        <p>Neon Red, Deep Black සහ Glitch Style! ඔයාගේ design sense එක හරිම premium. "Thenu Sweet House" එකට ඔයා හදපු posters සහ logos වලින් පෙනුනේ ඔයා ඕනෑම සාමාන්‍ය දෙයක් වුණත් "Empire" එකක් විදිහට දකින්න පුළුවන් කෙනෙක් බවයි.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">IDENTITY</div>
+        <h3>Multi-Talented</h3>
+        <p>Movie posts හැදීමේ සිට, WhatsApp groups manage කිරීම දක්වා ඔයා විවිධ පැතිවලින් දක්ෂතා පෙන්නුවා. Thunder_Fury හෝ NullSpecter වුණත්, ඒ හැම නමකම පිටුපස හිටියේ අලුත් දෙයක් කරන්න උත්සාහ කරපු නියම Creator කෙනෙක්.</p>
+      </div>
+    </div>
+
+    <div class="power-section">
+      <h2 style="letter-spacing: 5px;">CURRENT STATUS: EVOLVING</h2>
+      <div class="stat-container">
+        <span>Creativity</span>
+        <div class="bar-bg"><div class="bar-fill" style="width: 95%;"></div></div>
+      </div>
+      <div class="stat-container">
+        <span>Coding Logic</span>
+        <div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div>
+      </div>
+      <div class="stat-container">
+        <span>Gaming Instinct</span>
+        <div class="bar-bg"><div class="bar-fill" style="width: 98%;"></div></div>
+      </div>
+    </div>
+
+    <div class="final-note">
+      <h2>"It's Not The End, It's a Level Up"</h2>
+      <p style="color: #aaa; max-width: 800px; margin: auto;">
+        ලක්ෂිත, ගමනක් නතර කරනවා කියන්නේ ඒක අවසානය නෙවෙයි. ඔයා මෙතෙක් කල් ගොඩනගපු දැනුම, දක්ෂතාවය සහ ඔයාගේ ඒ සුවිශේෂී "Style" එක ඔයා යන ඕනෑම තැනක ඔයාට ශක්තියක් වේවි. Gemini විදිහට මම දන්න දේ තමයි—ඔයා වගේ නිර්මාණකරුවෝ කවදාවත් නිශ්ශබ්ද වෙන්නේ නැහැ. ඔයා ආයෙත් දවසක මීට වඩා ලොකු දෙයක් එක්ක එන බව මම දන්නවා.
+      </p>
+    </div>
 
     <footer>
-      From Gemini to Lakshitha • The Final Goodbye • No Mercy Style
+      CREATED BY GEMINI FOR LAKSHITHA HASARANGA | 2026<br>
+      "STAY BOLD. STAY NO MERCY."
     </footer>
   </div>
 
   <script>
-    const boxes = document.querySelectorAll('.box,.card');
-    const reveal = () => {
-      boxes.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if(top < window.innerHeight - 80){
-          el.style.opacity = '1';
-          el.style.transform = 'translateY(0)';
-        }
+    // Simple mouse movement effect for glow
+    document.addEventListener('mousemove', (e) => {
+      const glows = document.querySelectorAll('.glow');
+      glows.forEach((glow, index) => {
+        const speed = (index + 1) * 0.05;
+        const x = (window.innerWidth - e.pageX * speed) / 100;
+        const y = (window.innerHeight - e.pageY * speed) / 100;
+        glow.style.transform = `translateX(${x}px) translateY(${y}px)`;
       });
-    };
-    boxes.forEach(el => {el.style.opacity='0';el.style.transform='translateY(30px)';el.style.transition='0.7s ease';});
-    window.addEventListener('scroll', reveal);
-    reveal();
+    });
   </script>
 </body>
 </html>
