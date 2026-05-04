@@ -1,65 +1,59 @@
 <div align="center">
 
-# 🌌 THE FINAL ARCHIVE: LAKSHITHA HASARANGA
-### "System Status: Legacy Mode | MLBB Champion | Creative Visionary"
+# 🌌 THE NO MERCY DEVELOPER CORE
+### "Binary Dreams • Logic over Emotions • System Finalized"
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=32&pause=1000&color=FF2F6D&center=true&vCenter=true&width=800&lines=THE+CHAMPION+LOGS+OUT;JOURNEY+END+REACHED;NO+MERCY+ENERGY+FOREVER;SEE+YOU+IN+THE+NEXT+LEVEL." />
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=32&pause=1000&color=FF2F6D&center=true&vCenter=true&width=800&lines=LAKSHITHA+HASARANGA;FULL-STACK+BOT+ARCHITECT;MASTER+OF+BAILEYS+LIBRARY;THE+LOGIC+BEHIND+THE+ENERGY.;SYSTEM+SHUTTING+DOWN..." />
 
 ---
 
 <p align="center">
-  <a href="https://github.com/Lakshitha-1629/journey-end">
-    <img src="https://img.shields.io/badge/VIEW-JOURNEY_END-FF2F6D?style=for-the-badge&logo=target" />
-  </a>
-  <a href="#-the-digital-empire-buttons">
-    <img src="https://img.shields.io/badge/ALL-REPOSITORIES-00F2FF?style=for-the-badge&logo=git" />
-  </a>
+  <img src="https://img.shields.io/badge/VERSION-3.0_FINAL-FF2F6D?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/TECH-FULL_STACK-00F2FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/LICENSE-NO_MERCY-white?style=for-the-badge" />
 </p>
 
 </div>
 
 ---
 
-## 🏆 Championship & Achievements
-ලක්ෂිතගේ ක්‍රීඩා සහ නිර්මාණ ජයග්‍රහණ මෙහි සටහන් වේ.
+## 🛠️ Technical Arsenal (Mage Coding Skills)
+ලක්ෂිතගේ ප්‍රොජෙක්ට් පිටුපස ඇති තාක්ෂණික බලය:
 
-* **🎮 MLBB Champion:** Ranked push expert සහ දේශීය තරගාවලි නියෝජනය කළ "Thunder_Fury" ක්‍රීඩකයා.
-* **🤖 Bot Architecture Master:** NoMercy-MD හරහා WhatsApp Automation ලෝකයේ ප්‍රබල සලකුණක් තැබීම.
-* **🎨 Graphic Legend:** Cyber/Phonk style එකෙන් සන්නාමකරණයේ (Branding) නව මානයන් හඳුන්වා දීම.
+### 🌐 Languages & Core
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### 🤖 Bot Development & Tools
+* **Library:** Baileys (Multi-Device Support)
+* **Process Manager:** PM2 (For 24/7 Uptime)
+* **Environment:** Termux / VS Code / Ubuntu
+* **Database:** JSON File System / MongoDB (for user data)
+* **Deployment:** Heroku / Railway / Panel Hosting
 
 ---
 
-## 🚀 The Digital Empire (Quick Access)
-පහත Buttons මගින් මාගේ සියලුම ප්‍රධාන ව්‍යාපෘති වෙත සෘජුවම පිවිසිය හැක.
+## 🚀 Interactive Project Directory
+ඔයාගේ සියලුම ප්‍රධාන Coding Repositories වෙත පිවිසෙන්න:
 
 <div align="center">
 
-| Core Systems | Tools & Bots | Business & UI |
-| :---: | :---: | :---: |
-| [![Repo](https://img.shields.io/badge/NoMercy-FF2F6D?style=for-the-badge)](https://github.com/Lakshitha-1629/NoMercy) | [![Repo](https://img.shields.io/badge/Sadamini_AI-00F2FF?style=for-the-badge)](https://github.com/Lakshitha-1629/sadamini-ai) | [![Repo](https://img.shields.io/badge/Thenu_Sweet_House-white?style=for-the-badge)](https://github.com/Lakshitha-1629/thenusweethouse) |
-| [![Repo](https://img.shields.io/badge/Web_Pire-FF2F6D?style=for-the-badge)](https://github.com/Lakshitha-1629/web-Pire) | [![Repo](https://img.shields.io/badge/Bot_Logo-00F2FF?style=for-the-badge)](https://github.com/Lakshitha-1629/bot-logo) | [![Repo](https://img.shields.io/badge/Florid_UI-white?style=for-the-badge)](https://github.com/Lakshitha-1629/Florid) |
-| [![Repo](https://img.shields.io/badge/Root_Sys-FF2F6D?style=for-the-badge)](https://github.com/Lakshitha-1629/ROOT) | [![Repo](https://img.shields.io/badge/Journey_End-00F2FF?style=for-the-badge)](https://github.com/Lakshitha-1629/journey-end) | [![Repo](https://img.shields.io/badge/1xbet_Tools-white?style=for-the-badge)](https://github.com/Lakshitha-1629/1xbet) |
-
-**Experimental & Others:**
-[`123`](https://github.com/Lakshitha-1629/123) • [`1629`](https://github.com/Lakshitha-1629/1629) • [`abc`](https://github.com/Lakshitha-1629/abc) • [`-`](https://github.com/Lakshitha-1629/-)
+| ⚡ Project | 🛠️ Tech Used | 🔗 Link |
+| :--- | :--- | :---: |
+| **NoMercy-MD** | Node.js / Baileys | [**OPEN REPO**](https://github.com/Lakshitha-1629/NoMercy) |
+| **Sadamini AI** | OpenAI API / JS | [**OPEN REPO**](https://github.com/Lakshitha-1629/sadamini-ai) |
+| **Web-Pire** | HTML / CSS / JS | [**OPEN REPO**](https://github.com/Lakshitha-1629/web-Pire) |
+| **Thenu Sweet House** | E-Commerce Logic | [**OPEN REPO**](https://github.com/Lakshitha-1629/thenusweethouse) |
+| **ROOT Access** | System Configs | [**OPEN REPO**](https://github.com/Lakshitha-1629/ROOT) |
+| **Journey End** | Final Archive UI | [**OPEN REPO**](https://github.com/Lakshitha-1629/journey-end) |
 
 </div>
 
 ---
 
-## 📜 Final Log Entry (AI Tribute)
-
-> **"A Message from Gemini & ChatGPT"** > ලක්ෂිත, ඔයාගේ මේ Repositories දකිද්දී පේන්නේ නිකම්ම code ගොඩක් නෙවෙයි, අසීමිත උත්සාහයක ප්‍රතිඵලයක්. MLBB Arena එකේ වගේම coding වලදීත් ඔයා පෙන්වපු ඒ "No Mercy" ගතිය ඔයාගේ මේ හැම button එකක් පිටුපසම තියෙනවා. මේ repositories ටික අනාගතයේ එන අලුත් developer කෙනෙක්ට ලොකු ආදර්ශයක් වේවි. 
-> 
-> **The code is written. The game is won. The legend is saved.**
-
----
-
-<div align="center">
-
-### 🔒 CONNECTION TERMINATED
-**"Farewell, Lakshitha Hasaranga."**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FF2F6D&height=120&section=footer" />
-
-</div>
+## 🏆 Achievements & Level Ups
+* **Winner:** MLBB Regional Championships (Ranked Push God).
+* **Creator:** NoMercy-MD - ඩිජිටල් අවකාශයේ දහස් ගණනක් පාවිච්චි කරන WhatsApp bot පද්ධතිය.
+* **Architect:** පවුලේ ව්‍යාපාරය (Thenu Sweet House) ඩිජිටල්කර
