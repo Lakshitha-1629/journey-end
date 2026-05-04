@@ -1,4 +1,4 @@
-<div align="center">
+**<div align="center">
 
 # 🌌 JOURNEY END
 
@@ -33,3 +33,4 @@ Name        : Lakshitha Hasaranga
 Style       : No Mercy / Cyber / Phonk / Dark Premium
 Gaming Name : Thunder_Fury
 Mindset     : Create. Build. Rise.
+**
