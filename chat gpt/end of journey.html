@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journey End | Lakshitha</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      min-height:100vh;
+      font-family:Arial,Helvetica,sans-serif;
+      color:#fff;
+      background:#050505;
+      overflow-x:hidden;
+    }
+    body::before{
+      content:"";
+      position:fixed;inset:0;
+      background:
+        radial-gradient(circle at top left,rgba(255,0,80,.28),transparent 35%),
+        radial-gradient(circle at bottom right,rgba(0,200,255,.22),transparent 35%),
+        linear-gradient(120deg,#050505,#111,#050505);
+      z-index:-2;
+    }
+    body::after{
+      content:"";
+      position:fixed;inset:0;
+      background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+      background-size:42px 42px;
+      mask-image:linear-gradient(to bottom,#000,transparent 85%);
+      z-index:-1;
+    }
+    .wrap{width:min(1150px,92%);margin:auto}
+    header{padding:28px 0;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:900;letter-spacing:2px;color:#ff2f6d;text-shadow:0 0 20px #ff2f6d}
+    nav a{color:#ddd;text-decoration:none;margin-left:18px;font-size:14px}
+    nav a:hover{color:#ff2f6d}
+    .hero{min-height:82vh;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+    .tag{display:inline-block;padding:8px 14px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.06);color:#9ee7ff;margin-bottom:18px}
+    h1{font-size:clamp(54px,9vw,115px);line-height:.9;text-transform:uppercase;letter-spacing:-4px}
+    h1 span{display:block;color:#ff2f6d;text-shadow:0 0 35px rgba(255,47,109,.8)}
+    .hero p{margin-top:24px;color:#cfcfcf;line-height:1.7;font-size:18px;max-width:680px}
+    .buttons{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+    .btn{padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:800;color:#fff;background:linear-gradient(135deg,#ff2f6d,#7a00ff);box-shadow:0 0 25px rgba(255,47,109,.35)}
+    .btn.alt{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);box-shadow:none}
+    .card{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.15);border-radius:28px;padding:26px;backdrop-filter:blur(14px);box-shadow:0 25px 80px rgba(0,0,0,.35)}
+    .profile{position:relative;min-height:410px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden}
+    .profile::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:conic-gradient(from 90deg,#ff2f6d,#00d9ff,#7a00ff,#ff2f6d);filter:blur(8px);animation:spin 8s linear infinite}
+    .avatar{position:relative;width:210px;height:210px;border-radius:50%;background:#080808;border:8px solid #111;display:grid;place-items:center;font-size:64px;font-weight:900;color:#fff;box-shadow:inset 0 0 35px rgba(255,255,255,.09)}
+    .profile h2{position:relative;margin-top:24px;font-size:31px}.profile p{position:relative;color:#bbb;margin-top:8px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    section{padding:80px 0}.title{font-size:42px;margin-bottom:24px}.title span{color:#ff2f6d}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.box{padding:24px;border-radius:24px;background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.13);transition:.25s}.box:hover{transform:translateY(-8px);border-color:#ff2f6d}.box h3{font-size:22px;margin-bottom:12px;color:#9ee7ff}.box p{color:#c7c7c7;line-height:1.65}
+    .timeline{display:grid;gap:18px}.step{display:grid;grid-template-columns:110px 1fr;gap:18px;align-items:start}.year{color:#ff2f6d;font-weight:900}.step .card{padding:22px}.step h3{margin-bottom:8px}.step p{color:#cfcfcf;line-height:1.65}
+    .quote{font-size:clamp(28px,5vw,64px);font-weight:900;line-height:1.05;text-align:center;text-transform:uppercase}.quote span{color:#ff2f6d;text-shadow:0 0 30px rgba(255,47,109,.7)}
+    footer{padding:35px 0;text-align:center;color:#aaa;border-top:1px solid rgba(255,255,255,.1)}
+    @media(max-width:850px){.hero{grid-template-columns:1fr}nav{display:none}.grid{grid-template-columns:1fr}.step{grid-template-columns:1fr}h1{letter-spacing:-2px}.profile{min-height:350px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">LAKSHITHA • NO MERCY</div>
+      <nav>
+        <a href="#about">About</a><a href="#worlds">Worlds</a><a href="#journey">Journey</a><a href="#end">End</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div>
+        <div class="tag">⚡ Thunder_Fury / No Mercy Energy</div>
+        <h1>Journey <span>End</span></h1>
+        <p>
+          This is not just a web page. This is a digital memory wall for Lakshitha — gamer, creator,
+          WhatsApp bot builder, cyber-style designer, movie post maker, and the creative mind behind
+          ideas like <b>NoMercy-MD</b> and <b>Thenu Sweet House</b>.
+        </p>
+        <div class="buttons">
+          <a class="btn" href="#journey">Enter Journey</a>
+          <a class="btn alt" href="#worlds">Explore Worlds</a>
+        </div>
+      </div>
+      <div class="card profile">
+        <div class="avatar">LH</div>
+        <h2>Lakshitha Hasaranga</h2>
+        <p>Creator • Gamer • Bot Developer • Designer</p>
+      </div>
+    </main>
+
+    <section id="about">
+      <h2 class="title">Who is <span>Lakshitha?</span></h2>
+      <div class="card">
+        <p style="color:#ddd;line-height:1.8;font-size:18px">
+          A Sri Lankan creator with a hacker/cyber aesthetic, a love for gaming, powerful branding,
+          WhatsApp bot development, movie-group content, and business design. The style is always bold:
+          neon, black, white, red, glitch, phonk, premium fonts, and “No Mercy” energy.
+        </p>
+      </div>
+    </section>
+
+    <section id="worlds">
+      <h2 class="title">Main <span>Worlds</span></h2>
+      <div class="grid">
+        <div class="box"><h3>🎮 Gaming</h3><p>Need for Speed, Forza Horizon, GTA, Red Dead Redemption, horror games, Free Fire vibes, and MLBB ranked push energy.</p></div>
+        <div class="box"><h3>🤖 NoMercy-MD</h3><p>A WhatsApp bot dream with owner-only control, alive menus, downloader tools, stickers, AI chat, and cyber command panels.</p></div>
+        <div class="box"><h3>🎂 Thenu Sweet House</h3><p>A family cake business project with logo, posters, price lists, website ideas, WhatsApp orders, TikTok and Facebook promotion.</p></div>
+        <div class="box"><h3>🎬 Movie Verse</h3><p>Stylish movie posts, Sinhala subtitles, WhatsApp group promotion, upload credits, and cinematic templates.</p></div>
+        <div class="box"><h3>🎨 Design Style</h3><p>Phonk logos, Avee Player style marks, cyber banners, glitch typography, black-white-red themes, and premium poster layouts.</p></div>
+        <div class="box"><h3>💻 Tech Journey</h3><p>Node.js, Baileys, PM2, Termux, GitHub, VS Code, HTML/CSS/JS, deployment fixes, and full repo building.</p></div>
+      </div>
+    </section>
+
+    <section id="journey">
+      <h2 class="title">The <span>Journey</span></h2>
+      <div class="timeline">
+        <div class="step"><div class="year">START</div><div class="card"><h3>Ideas became names</h3><p>No Mercy, Thunder_Fury, NullSpecter, Cyber Specter — every name carried a darker, stronger, unforgettable identity.</p></div></div>
+        <div class="step"><div class="year">BUILD</div><div class="card"><h3>Code became power</h3><p>WhatsApp bot folders, package files, Baileys errors, PM2 logs, QR pairing, menus, commands, and endless upgrades shaped the project.</p></div></div>
+        <div class="step"><div class="year">CREATE</div><div class="card"><h3>Design became emotion</h3><p>Logos, banners, TikTok descriptions, cake posters, websites, gaming names, and movie posts turned simple ideas into visual stories.</p></div></div>
+        <div class="step"><div class="year">RISE</div><div class="card"><h3>A creator identity was born</h3><p>Not one niche — many worlds. Gaming, coding, business, design, marketing, content, and cyber-style creativity in one path.</p></div></div>
+      </div>
+    </section>
+
+    <section id="end">
+      <div class="card">
+        <div class="quote">
+          The journey may end,<br />but the <span>empire</span> starts here.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built for Lakshitha • Journey End • No Mercy Style
+    </footer>
+  </div>
+
+  <script>
+    const boxes = document.querySelectorAll('.box,.card');
+    const reveal = () => {
+      boxes.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 80){
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }
+      });
+    };
+    boxes.forEach(el => {el.style.opacity='0';el.style.transform='translateY(30px)';el.style.transition='0.7s ease';});
+    window.addEventListener('scroll', reveal);
+    reveal();
+  </script>
+</body>
+</html>
